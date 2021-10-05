@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administrators",
+  "info": {
+    "name": "Administrators"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "pengurus",
+        "pembina"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "jobdesk": {
+      "type": "string"
+    }
+  }
+}

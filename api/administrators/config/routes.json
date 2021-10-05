@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/administrators",
+      "handler": "administrators.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administrators/count",
+      "handler": "administrators.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/administrators/:id",
+      "handler": "administrators.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/administrators",
+      "handler": "administrators.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/administrators/:id",
+      "handler": "administrators.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/administrators/:id",
+      "handler": "administrators.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

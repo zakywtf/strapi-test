@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "name": "about",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "about_us": {
+      "type": "text"
+    },
+    "visi": {
+      "type": "text"
+    },
+    "misi": {
+      "type": "text"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "location": {
+      "type": "text"
+    },
+    "email": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "banners": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
